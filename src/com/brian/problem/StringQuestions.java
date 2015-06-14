@@ -1,6 +1,21 @@
 package com.brian.problem;
 
 public class StringQuestions {
+	public static void generatePermutations(String str) {
+		permutation("", str);
+	}
+	private static void permutation(String ans, String remain) {
+		int n = remain.length();
+		
+		if (n == 0) {
+			System.out.println(ans);
+		} else {
+			for (int i = 0; i < n; i++) {
+				permutation(ans + remain.charAt(i), remain.substring(0, i) + remain.substring(i+1, n));
+			}
+		}
+	}
+	
 	public static boolean isSubstring(String strA, String strB) {
 		if (strA.length() > strB.length()) {
 			return strA.contains(strB);
