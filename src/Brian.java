@@ -1,5 +1,5 @@
 import com.brian.problem.StringPermutation;
-import com.brian.problem.StringRotation;
+import com.brian.problem.StringQuestions;
 
 
 public class Brian {

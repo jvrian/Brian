@@ -1,6 +1,6 @@
 package com.brian.problem;
 
-public class StringRotation {
+public class StringQuestions {
 	public static boolean isSubstring(String strA, String strB) {
 		if (strA.length() > strB.length()) {
 			return strA.contains(strB);
@@ -26,7 +26,7 @@ public class StringRotation {
 			int[] charCount = new int[128];
 			
 			for (int i = 0; i < charA.length; i++) {
-				charCount[charA[i]]++;
+				charCount[charA[i]]++;	// Array의 index를 character로 쓸 수 있음
 			}
 			for (int j = 0; j < charB.length; j++) {
 				charCount[charB[j]]--;
